@@ -44,6 +44,10 @@ script
   export INSIGHT_PORT='<%= @insight_port %>'
   export INSIGHT_DB=<%= @insight_db %>
   export INSIGHT_MAILBOX='<%= @insight_mailbox %>'
+<% if @insight_force_rpc_sync %>
+  # Needed if bitcoind v0.10 - https://github.com/bitpay/insight-api#warning
+  export INSIGHT_FORCE_RPC_SYNC='<%= @insight_force_rpc_sync %>'
+<% end %>
   export BITCOIND_USER='<%= @bitcoind_user %>'
   export BITCOIND_PASS='<%= @bitcoind_pass %>'
   export BITCOIND_HOST='<%= @bitcoind_host %>'

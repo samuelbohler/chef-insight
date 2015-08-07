@@ -23,6 +23,7 @@ default['insight']['config']['monitor'] = false
 default['insight']['config']['enable_mailbox'] = false
 default['insight']['config']['enable_emailstore'] = false
 default['insight']['config']['email_confirm_host'] = ''
+default['insight']['config']['insight_force_rpc_sync'] = false
 
 
 # Bitcoind configuration

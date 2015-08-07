@@ -68,6 +68,7 @@ node['insight']['instances'].each do |instance|
       :insight_db => config_merged['db'],
       :insight_mailbox => config_merged['enable_mailbox'],
       :insight_network => config_merged['network'],
+      :insight_force_rpc_sync => config_merged['insight_force_rpc_sync'],
       :logger_string => logger_string,
       :bitcoind_user => config_merged['bitcoind']['user'],
       :bitcoind_pass => config_merged['bitcoind']['pass'],
